@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.grilla {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows: 1fr 1fr;
+
+    grid-template-areas: 
+    "messi messi    recorrido  indumentaria    titulos"
+    "messi messi    familia    curiosidades    referencias"
+    ;
+    
+}
+
+.messi{
+    grid-area: messi;  
+}
+.messi > img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recorrido{
+    background-color: rgb(11, 121, 35);
+    grid-area: recorrido;
+}
+.indumentaria{
+    background-color: rgb(111, 0, 255);
+    grid-area: indumentaria;
+}
+.titulos{
+    background-color: rgb(255, 0, 0);
+    grid-area: titulos;
+}
+.familia{
+    background-color: rgb(255, 0, 170);
+    grid-area: familia;
+}
+.curiosidades{
+    background-color: rgba(0, 255, 21, 0.295);
+    grid-area: curiosidades;
+}
+.referencias{
+    background-color: rgb(208, 255, 0);
+    grid-area:referencias
+}
+
+.hijo{
+    padding: 2rem;
+}
