@@ -3,6 +3,26 @@
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
+    
+}
+
+.hijo > a{
+    text-decoration: none;
+    color: white;
+    font-family: "Orbitron";
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a:visited{
+    color: white;
 }
 
 .grilla {
@@ -14,44 +34,68 @@
 
     grid-template-areas: 
     "messi messi    recorrido  indumentaria    titulos"
-    "messi messi    familia    curiosidades    referencias"
+    "messi messi    familia    estadisticas    apariciones"
     ;
     
 }
 
 .messi{
-    grid-area: messi;  
-}
-.messi > img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.recorrido{
-    background-color: rgb(11, 121, 35);
-    grid-area: recorrido;
-}
-.indumentaria{
-    background-color: rgb(111, 0, 255);
-    grid-area: indumentaria;
-}
-.titulos{
-    background-color: rgb(255, 0, 0);
-    grid-area: titulos;
-}
-.familia{
-    background-color: rgb(255, 0, 170);
-    grid-area: familia;
-}
-.curiosidades{
-    background-color: rgba(0, 255, 21, 0.295);
-    grid-area: curiosidades;
-}
-.referencias{
-    background-color: rgb(208, 255, 0);
-    grid-area:referencias
+    grid-area: messi;
+    background-image: url(../img/logo-messi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hijo{
-    padding: 2rem;
+.recorrido{
+    grid-area: recorrido;
+    background-image: url(../img/recorrido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.indumentaria{
+    grid-area: indumentaria;
+    background-image: url(../img/indumentaria.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.titulos{
+    grid-area: titulos;
+    background-image: url(../img/titulos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.familia{
+    grid-area: familia;
+    background-image: url(../img/familia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.estadisticas{
+    grid-area: estadisticas;
+    background-image: url(../img/estadisticas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.apariciones{
+    grid-area:apariciones;
+    background-image: url(../img/apariciones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
