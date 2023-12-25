@@ -5,9 +5,12 @@
     font-family: 'Patua One', serif;
 }
 
-img{
+
+
+figure > img{
+    max-width: 600px;
     border-radius: 20px;
-    max-height: 100%;
+    max-height: 450px;
 }
 .hijo > a{
     text-decoration: none;
@@ -257,6 +260,32 @@ a> img {
     color: black;
 }
 
+.clean{
+
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  
+    height: 50px;
+    width: 50px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.carousel-item img {
+    max-height: 350px;
+    width:auto;
+    
+  }
+
+  .carousel {
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+
 
 .footer {
     display: flex;
@@ -310,5 +339,14 @@ a> img {
 
     .logo{
         flex-grow: 2;
+    }
+}
+
+@media (max-width : 600px) {
+    .hero-left{
+        flex-direction: column;
+    }
+    .hero-rigth{
+        align-items: center;
     }
 }
