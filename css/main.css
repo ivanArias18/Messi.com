@@ -6,6 +6,48 @@
 }
 
 
+.trofeos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    text-decoration:none;
+    font-size: .9rem;
+    padding: 2rem;
+}
+
+.foto-trofeo{
+    max-height: 500px;
+    max-width: 100px; /* ancho */
+    padding: 0, 1rem ;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 0px 20px;
+}
+
+.trofeo-name{
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: black;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    max-width: 150px;
+    
+}
+
+.trofeo-fecha {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 200px;
+  }
+
 
 figure > img{
     max-width: 600px;
@@ -139,7 +181,7 @@ a> img {
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
-
+    height: auto;
 }
 
 
@@ -147,6 +189,7 @@ a> img {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background-color: black;
 }
 .hero-left{
     display: flex;
@@ -311,8 +354,6 @@ a> img {
 }
 
 @media (max-width: 950px) {
-    
-
     .grilla{
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -325,6 +366,16 @@ a> img {
     }
     
 }
+
+@media (max-width : 600px) {
+    .hero-left{
+        flex-direction: column;
+    }
+    .hero-rigth{
+        align-items: center;
+    }
+}
+
 
 @media (max-width : 315px) {
 
@@ -342,11 +393,13 @@ a> img {
     }
 }
 
-@media (max-width : 600px) {
-    .hero-left{
-        flex-direction: column;
+@media (max-width : 153px) {
+    .hijo{
+        flex-grow: 0.5;
     }
-    .hero-rigth{
-        align-items: center;
+
+    .logo{
+        flex-grow: 1;
     }
 }
+
