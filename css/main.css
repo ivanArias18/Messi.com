@@ -5,6 +5,20 @@
     font-family: 'Patua One', serif;
 }
 
+body{
+    position: relative;
+    padding-bottom: 13rem;
+    min-height: 100vh;
+}
+
+footer{
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 .trofeos {
     display: flex;
     flex-direction: row;
@@ -208,7 +222,8 @@ a> img {
     color: white;
 }
 .hero-text{
-    margin: 1rem;
+    padding: 1rem ;
+    text-align: center;
     color: white;
 }
 
@@ -223,6 +238,7 @@ a> img {
 }
 
 .bar-fondo {
+    position: relative;
     background-color: green;
     background-image: linear-gradient(
       to right,
@@ -250,6 +266,7 @@ a> img {
 
 
 .psg-fondo{
+    position: relative;
     background-color: green;
     background-image: linear-gradient(
       to right,
@@ -305,7 +322,7 @@ a> img {
 
 .clean{
 
-    color: white;
+    color: red !important;
 }
 
 .carousel-control-prev-icon,
@@ -329,6 +346,19 @@ a> img {
     margin-left: 400px;
   }
 
+  .club-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.camiseta-name{
+    background-color: white;
+    opacity: 70%;
+}
 
 .footer {
     display: flex;
@@ -383,6 +413,12 @@ a> img {
     }
 }
 
+@media (max-width : 315px) {
+
+    figure > img{
+        min-width: 100px;
+    }
+}
 
 
 @media (max-width : 315px) {
