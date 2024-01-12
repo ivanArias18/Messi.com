@@ -226,6 +226,13 @@ a> img {
     text-align: center;
     color: white;
 }
+.contenedor-foto{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .dir-rev{
     flex-direction: row-reverse;
@@ -360,6 +367,17 @@ a> img {
     opacity: 70%;
 }
 
+
+.pagina-sinterminar{
+    background-image: url(../img/pagina-sin-hacer.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+}
+
 .footer {
     display: flex;
     padding: 3rem;
@@ -446,4 +464,6 @@ a> img {
         flex-grow: 1;
     }
 }
+
+
 
