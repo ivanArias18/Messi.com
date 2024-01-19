@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patua One", serif;
+}
+
+a > img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+.nob-fondo {
+  background-color: #008000;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.733) 50%, rgb(0, 0, 0) 50%);
+}
+
+.bar-fondo {
+  position: relative;
+  background-color: #008000;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.692) 0%, rgba(255, 0, 0, 0.692) 10%, rgba(0, 0, 255, 0.781) 10%, rgba(0, 0, 255, 0.781) 20%, rgba(255, 0, 0, 0.692) 20%, rgba(255, 0, 0, 0.692) 30%, rgba(0, 0, 255, 0.781) 30%, rgba(0, 0, 255, 0.781) 40%, rgba(255, 0, 0, 0.692) 40%, rgba(255, 0, 0, 0.692) 50%, rgba(0, 0, 255, 0.781) 50%, rgba(0, 0, 255, 0.781) 60%, rgba(255, 0, 0, 0.692) 60%, rgba(255, 0, 0, 0.692) 70%, rgba(0, 0, 255, 0.781) 70%, rgba(0, 0, 255, 0.781) 80%, rgba(255, 0, 0, 0.692) 80%, rgba(255, 0, 0, 0.692) 90%, rgba(0, 0, 255, 0.781) 90%, rgba(0, 0, 255, 0.781) 100%);
+}
+
+.psg-fondo {
+  position: relative;
+  background-color: #008000;
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.705) 0%, rgba(0, 0, 255, 0.705) 40%, rgba(255, 255, 255, 0.795) 40%, rgba(255, 255, 255, 0.795) 42%, rgba(255, 0, 0, 0.685) 42%, rgba(255, 0, 0, 0.685) 55%, rgba(255, 255, 255, 0.795) 55%, rgba(255, 255, 255, 0.795) 57%, rgba(0, 0, 255, 0.705) 57%, rgba(0, 0, 255, 0.705) 100%);
+}
+
+.interm-fondo {
+  background-color: #008000;
+  background-image: linear-gradient(to right, rgb(255, 192, 203) 0%, rgb(255, 192, 203) 100%);
+}
+
+.arg-fondo {
+  background-color: #008000;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 10%, rgb(93, 209, 255) 10%, rgb(93, 209, 255) 20%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 30%, rgb(93, 209, 255) 30%, rgb(93, 209, 255) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 50%, rgb(93, 209, 255) 50%, rgb(93, 209, 255) 60%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 70%, rgb(93, 209, 255) 70%, rgb(93, 209, 255) 80%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 90%, rgb(93, 209, 255) 90%, rgb(93, 209, 255) 100%);
+}
+
+.header a {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.nav {
+  background-color: rgba(0, 174, 255, 0.8431372549);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  text-decoration: none;
+  font-size: 0.5rem;
+}
+.menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  height: auto;
+}
+
+.contenedor-foto {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #000000;
+}
+.hero .hero-left {
+  display: flex;
+  padding: 1rem;
+  flex: 4;
+}
+.hero .hero-rigth {
+  padding: 2rem;
+  flex: 0.5;
+}
+.hero .hero-title {
+  color: #ffffff;
+}
+.hero .hero-sub-title {
+  margin: 1rem;
+  color: #ffffff;
+}
+.hero .hero-text {
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+.hero .dir-rev {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 600px) {
+  .hero-left {
+    flex-direction: column;
+  }
+  .hero-rigth {
+    align-items: center;
+  }
+}
+figure > img {
+  min-width: 200px;
+  max-width: 100%;
+  border-radius: 20px;
+  max-height: 450px;
+}
+
+@media (max-width: 315px) {
+  figure > img {
+    min-width: 100px;
+  }
+}
+.carousel {
+  margin-right: 400px;
+  margin-left: 400px;
+}
+.carousel .carousel-item img {
+  max-height: 350px;
+  width: auto;
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.camiseta-name {
+  background-color: #ffffff;
+  opacity: 70%;
+}
+
+.club-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.trofeos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+.trofeos .foto-trofeo {
+  max-height: 500px;
+  max-width: 100px; /* ancho */
+  padding: 0, 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 100px 0px 20px;
+}
+.trofeos .trofeo-name {
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.4431372549);
+  color: #000000;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  max-width: 150px;
+}
+.trofeos .trofeo-fecha {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.grilla {
+  min-height: 100vh;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "messi messi    recorrido  indumentaria    titulos" "messi messi    familia    estadisticas    apariciones";
+}
+
+.messi {
+  grid-area: messi;
+  background-image: url(../img/logo_claro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.recorrido {
+  grid-area: recorrido;
+  background-image: url(../img/recorrido.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.recorrido:hover {
+  transform: translate(4%, 4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgba(0, 174, 255, 0.705);
+}
+.recorrido:hover:before {
+  content: "Recorrido";
+  font-family: "Orbitron";
+  font-size: 1.2rem;
+  color: rgba(0, 174, 255, 0.705);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.indumentaria {
+  grid-area: indumentaria;
+  background-image: url(../img/indumentaria.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.indumentaria:hover {
+  transform: translate(0%, 4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.664);
+}
+.indumentaria:hover:before {
+  content: "Indumentaria";
+  font-family: "Orbitron";
+  font-size: 1.6rem;
+  color: rgba(0, 0, 255, 0.664);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulos {
+  grid-area: titulos;
+  background-image: url(../img/titulos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.titulos:hover {
+  transform: translate(-4%, 4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgb(218, 165, 32);
+}
+.titulos:hover:before {
+  content: "Titulos";
+  font-family: "Orbitron";
+  font-size: 1.7rem;
+  color: rgb(218, 165, 32);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.familia {
+  grid-area: familia;
+  background-image: url(../img/familia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.familia:hover {
+  transform: translate(4%, -4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgba(5, 150, 24, 0.769);
+}
+.familia:hover:before {
+  content: "Familia";
+  font-family: "Orbitron";
+  font-size: 1.6rem;
+  color: rgba(5, 150, 24, 0.769);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.estadisticas {
+  grid-area: estadisticas;
+  background-image: url(../img/estadisticas.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.estadisticas:hover {
+  transform: translate(0%, -4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+}
+.estadisticas:hover:before {
+  content: "Estadisticas";
+  font-family: "Orbitron";
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.apariciones {
+  grid-area: apariciones;
+  background-image: url(../img/apariciones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.apariciones:hover {
+  transform: translate(-4%, -4%);
+  z-index: 2;
+  box-shadow: 0 0 20px 10px rgb(243, 45, 45);
+}
+.apariciones:hover:before {
+  content: "Apariciones";
+  font-family: "Orbitron";
+  font-size: 1.6rem;
+  color: rgb(243, 45, 45);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 950px) {
+  .grilla {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "messi messi" "recorrido indumentaria" "titulos familia" "estadisticas apariciones";
+  }
+}
+@media (max-width: 315px) {
+  .grilla {
+    display: flex;
+    flex-direction: column;
+  }
+  .hijo {
+    flex-grow: 1;
+  }
+  .logo {
+    flex-grow: 2;
+  }
+}
+@media (max-width: 153px) {
+  .hijo {
+    flex-grow: 0.5;
+  }
+  .logo {
+    flex-grow: 1;
+  }
+}
+.hijo > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: 2s !important;
+}
+.hijo > a:hover {
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+.pagina-sinterminar {
+  background-image: url(../img/pagina-sin-hacer.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+}
+
+.footer {
+  flex-shrink: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  gap: 2rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+.footer .footer a {
+  color: #ffffff;
+}
+.footer .footer-1, .footer .footer-2, .footer .footer-3, .footer .footer-4 {
+  flex: 1;
+}
+.footer .footer-4 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: end;
+}/*# sourceMappingURL=estilos.css.map */

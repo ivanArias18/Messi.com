@@ -1,0 +1,84 @@
+
+.nob-fondo{
+    background-color: $colordefondo;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.733) 50%, rgb(0, 0, 0) 50%);
+}
+
+.bar-fondo {
+    position: relative;
+    background-color: $colordefondo;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.692) 0%,
+      rgba(255, 0, 0, 0.692) 10%,
+      rgba(0, 0, 255, 0.781) 10%,
+      rgba(0, 0, 255, 0.781) 20%,
+      rgba(255, 0, 0, 0.692) 20%,
+      rgba(255, 0, 0, 0.692) 30%,
+      rgba(0, 0, 255, 0.781) 30%,
+      rgba(0, 0, 255, 0.781) 40%,
+      rgba(255, 0, 0, 0.692) 40%,
+      rgba(255, 0, 0, 0.692) 50%,
+      rgba(0, 0, 255, 0.781) 50%,
+      rgba(0, 0, 255, 0.781) 60%,
+      rgba(255, 0, 0, 0.692) 60%,
+      rgba(255, 0, 0, 0.692) 70%,
+      rgba(0, 0, 255, 0.781) 70%,
+      rgba(0, 0, 255, 0.781) 80%,
+      rgba(255, 0, 0, 0.692) 80%,
+      rgba(255, 0, 0, 0.692) 90%,
+      rgba(0, 0, 255, 0.781) 90%,
+      rgba(0, 0, 255, 0.781) 100%);
+  }
+
+
+.psg-fondo{
+    position: relative;
+    background-color: $colordefondo;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 255, 0.705)  0%,
+      rgba(0, 0, 255, 0.705)  40%,
+      rgba(255, 255, 255, 0.795) 40%,
+      rgba(255, 255, 255, 0.795)  42%,
+      rgba(255, 0, 0, 0.685) 42%,
+      rgba(255, 0, 0, 0.685) 55%,
+      rgba(255, 255, 255, 0.795)  55%,
+      rgba(255, 255, 255, 0.795)  57%,
+      rgba(0, 0, 255, 0.705) 57%,
+      rgba(0, 0, 255, 0.705) 100%);
+}
+
+.interm-fondo{
+    background-color: $colordefondo;
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 192, 203) 0%,
+        rgb(255, 192, 203) 100%);
+}
+
+.arg-fondo{
+    background-color: $colordefondo;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 10%,
+      rgb(93, 209, 255) 10%,
+      rgb(93, 209, 255) 20%,
+      rgb(255, 255, 255) 20%,
+      rgb(255, 255, 255) 30%,
+      rgb(93, 209, 255) 30%,
+      rgb(93, 209, 255) 40%,
+      rgb(255, 255, 255) 40%,
+      rgb(255, 255, 255) 50%,
+      rgb(93, 209, 255) 50%,
+      rgb(93, 209, 255) 60%,
+      rgb(255, 255, 255) 60%,
+      rgb(255, 255, 255) 70%,
+      rgb(93, 209, 255) 70%,
+      rgb(93, 209, 255) 80%,
+      rgb(255, 255, 255) 80%,
+      rgb(255, 255, 255) 90%,
+      rgb(93, 209, 255) 90%,
+      rgb(93, 209, 255) 100%);
+}

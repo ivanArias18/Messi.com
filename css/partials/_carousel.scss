@@ -1,0 +1,23 @@
+
+.carousel {
+    margin-right: 400px;
+    margin-left: 400px;
+    .carousel-item img {
+        max-height: 350px;
+        width:auto;
+        
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      
+        height: 50px;
+        width: 50px;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        background-color: $rojo;
+    }
+}
+
+  
+
+ 
