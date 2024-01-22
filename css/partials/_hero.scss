@@ -3,15 +3,6 @@
     flex-direction: column;
     padding: 1rem;
     background-color: $oscuro;
-    .hero-left{
-        display: flex;
-        padding: 1rem;
-        flex: 4;
-    }
-    .hero-rigth{
-        padding: 2rem;
-        flex: .5;
-    }
     .hero-title{
         color: $claro;
     }
@@ -28,13 +19,4 @@
         flex-direction: row-reverse;
     }
     
-}
-
-@media (max-width : 600px) {
-    .hero-left{
-        flex-direction: column;
-    }
-    .hero-rigth{
-        align-items: center;
-    }
 }
