@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +11,19 @@ a > img {
   max-width: 100px;
 }
 
+a {
+  color: #ffffff;
+}
+
 a:visited {
   color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece la altura mínima de la ventana gráfica */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
 
 .nob-fondo {
@@ -180,16 +192,16 @@ figure > img {
   align-items: center;
   gap: 2rem;
   text-decoration: none;
-  font-size: 0.9rem;
   padding: 2rem;
 }
 .trofeos .foto-trofeo {
-  max-height: 500px;
-  max-width: 100px; /* ancho */
+  max-height: 100%;
+  max-width: 100%;
   padding: 0, 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 100px 0px 20px;
+  margin: 0px 0px 0px 20px;
 }
 .trofeos .trofeo-name {
   padding: 1rem 1.5rem;
@@ -208,6 +220,64 @@ figure > img {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 200px;
+}
+
+.card-trofeo {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  border: solid #000000;
+}
+
+.card-trofeo .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-trofeo .front {
+  transform: rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-trofeo .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-trofeo .back {
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-trofeo .back img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-trofeo:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-trofeo:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 .grilla {
@@ -432,13 +502,17 @@ figure > img {
 }
 
 .pagina-sinterminar {
-  background-image: url(../img/pagina-sin-hacer.jpg);
+  background-image: url(../../img/errorH.png);
   background-size: cover;
   background-position: center;
   text-align: center;
   background-size: 100% 100%;
   background-position: center;
   text-align: center;
+}
+
+.main-content {
+  flex: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
 }
 
 .footer {

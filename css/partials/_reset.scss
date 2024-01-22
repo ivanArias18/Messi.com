@@ -10,6 +10,17 @@ a> img {
     max-width: 100px;
 }
 
+a{
+    color: $claro;
+}
+
 a:visited{
     color: $claro;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima de la ventana gráfica */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }

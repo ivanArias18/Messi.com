@@ -1,9 +1,13 @@
 .pagina-sinterminar{
-    background-image: url(../img/pagina-sin-hacer.jpg);
+    background-image: url(../../img/errorH.png);
     background-size: cover;
     background-position: center;
     text-align: center;
     background-size: 100% 100%;
     background-position: center;
     text-align: center;
+}
+
+.main-content {
+    flex: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
 }
