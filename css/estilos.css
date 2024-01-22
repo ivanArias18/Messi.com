@@ -152,32 +152,24 @@ figure > img {
     min-width: 100px;
   }
 }
-.carousel {
-  margin-right: 400px;
-  margin-left: 400px;
-}
-.carousel .carousel-item img {
-  max-height: 350px;
-  width: auto;
-}
-.carousel .carousel-control-prev-icon,
-.carousel .carousel-control-next-icon {
-  height: 50px;
-  width: 50px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-color: #ff0000;
+.carousel-item img {
+  max-width: 100%; /* Ajusta según sea necesario */
+  max-height: 300px; /* Ajusta según sea necesario */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
+@media (max-width: 306px) {
+  .carousel-item {
+    max-height: 200px;
+  }
+}
 .camiseta-name {
   background-color: #ffffff;
   opacity: 70%;
 }
 
 .club-name {
-  position: absolute;
-  top: 0;
-  left: 0;
+  text-align: center;
   padding: 10px;
   color: #ffffff;
   font-size: 24px;
@@ -536,4 +528,11 @@ figure > img {
   flex-direction: row;
   gap: 1rem;
   align-items: end;
+}
+
+@media (max-width: 540px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=estilos.css.map */
