@@ -3,5 +3,11 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+}
 
+@media (max-width :690px) {
+    .contenedor-foto{
+        flex-direction: column;
+    }
 }

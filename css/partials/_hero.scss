@@ -3,6 +3,10 @@
     flex-direction: column;
     padding: 1rem;
     background-color: $oscuro;
+    overflow-x: hidden;
+    .heros{
+        display: flex;
+    }
     .hero-title{
         color: $claro;
     }
@@ -18,9 +22,18 @@
     .dir-rev{
         flex-direction: row-reverse;
     }
-    
 }
 
-.hero > *, .hero >*>*, .hero > * > *>*{
-    overflow: hidden;
+
+@media (max-width :1200px) {
+    .heros{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .dir-rev{
+        flex-direction: column;
+        
+    }
 }

@@ -23,4 +23,10 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Establece la altura mínima de la ventana gráfica */
     margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ol, ul{
+    list-style-type: none;
 }

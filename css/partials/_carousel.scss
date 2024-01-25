@@ -10,7 +10,9 @@
     text-align: center;
     // por algun motivo de dios nada funciona para poder hacer que el texto una vez sea menor a 770px no anda xd, ojala algun desarollador master senior arreglase esto algun dia 
 }
-
+.carousel-item{
+    padding-bottom: 5rem;
+}
 
 @media (max-width: 770px) {
     .carousel-caption {

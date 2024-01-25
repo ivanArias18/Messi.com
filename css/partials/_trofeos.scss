@@ -7,6 +7,7 @@
     gap: 2rem;
     text-decoration:none;
     padding: 2rem;
+    justify-content: center;
 
         
     .foto-trofeo{
@@ -20,24 +21,26 @@
     }
 
     .trofeo-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 1rem 1.5rem;
         background-color: $nombre-trof;
         color: $oscuro;
         text-align: center;
         border-radius: 0 0 10px 10px;
-        max-width: 150px;
+        min-width: 200px;
         
     }
 
     .trofeo-fecha {
+        display: flex;
+        flex-direction: column;
         font-size: 20px;
         margin-bottom: 5px;
         color: $claro;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 200px;
+        max-width: 300px;
+        align-items: center;
     }
 
 }
@@ -105,4 +108,21 @@
         flex-direction: row;
     }
 }
+@media (max-width :400px) {
+    .card-trofeo{
+        max-width: 200px;
+    }
+    .trofeo-name{
+        max-width: 100%;
+    }
+    .trofeo-fecha{
+        max-width: 100%
+    }
+}
 
+@media (max-width :300px) {
+    .card-trofeo{
+        max-width: 150px;
+    }
+
+}

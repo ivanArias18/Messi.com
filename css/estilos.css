@@ -24,6 +24,12 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Establece la altura mínima de la ventana gráfica */
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style-type: none;
 }
 
 .nob-fondo {
@@ -69,6 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
@@ -99,13 +106,23 @@ body {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
+@media (max-width: 690px) {
+  .contenedor-foto {
+    flex-direction: column;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   background-color: #000000;
+  overflow-x: hidden;
+}
+.hero .heros {
+  display: flex;
 }
 .hero .hero-title {
   color: #ffffff;
@@ -123,10 +140,16 @@ body {
   flex-direction: row-reverse;
 }
 
-.hero > *, .hero > * > *, .hero > * > * > * {
-  overflow: hidden;
+@media (max-width: 1200px) {
+  .heros {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .dir-rev {
+    flex-direction: column;
+  }
 }
-
 figure > img {
   min-width: 200px;
   max-width: 100%;
@@ -148,6 +171,10 @@ figure > img {
   color: white;
   padding: 15px;
   text-align: center;
+}
+
+.carousel-item {
+  padding-bottom: 5rem;
 }
 
 @media (max-width: 770px) {
@@ -184,6 +211,7 @@ figure > img {
   gap: 2rem;
   text-decoration: none;
   padding: 2rem;
+  justify-content: center;
 }
 .trofeos .foto-trofeo {
   max-height: 100%;
@@ -195,22 +223,24 @@ figure > img {
   margin: 0px 0px 0px 20px;
 }
 .trofeos .trofeo-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem 1.5rem;
   background-color: rgba(255, 255, 255, 0.4431372549);
   color: #000000;
   text-align: center;
   border-radius: 0 0 10px 10px;
-  max-width: 150px;
+  min-width: 200px;
 }
 .trofeos .trofeo-fecha {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   margin-bottom: 5px;
   color: #ffffff;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 200px;
+  max-width: 300px;
+  align-items: center;
 }
 
 .card-trofeo {
@@ -274,6 +304,22 @@ figure > img {
 @media (max-width: 435px) {
   .trofeos {
     flex-direction: row;
+  }
+}
+@media (max-width: 400px) {
+  .card-trofeo {
+    max-width: 200px;
+  }
+  .trofeo-name {
+    max-width: 100%;
+  }
+  .trofeo-fecha {
+    max-width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .card-trofeo {
+    max-width: 150px;
   }
 }
 .grilla {
@@ -505,10 +551,13 @@ figure > img {
   background-size: 100% 100%;
   background-position: center;
   text-align: center;
+  max-width: 100%;
 }
 
 .main-content {
   flex: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
+  max-width: 100%;
+  width: 100vh;
 }
 
 .footer {
