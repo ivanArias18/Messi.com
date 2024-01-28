@@ -6,6 +6,7 @@
     overflow-x: hidden;
     .heros{
         display: flex;
+
     }
     .hero-title{
         color: $claro;
@@ -21,6 +22,11 @@
     }
     .dir-rev{
         flex-direction: row-reverse;
+        display: flex;
+
+        padding: 1rem;
+
+        overflow-x: hidden;
     }
 }
 
@@ -33,7 +39,8 @@
     }
 
     .dir-rev{
-        flex-direction: column;
-        
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;   
     }
 }

@@ -30,3 +30,10 @@ body {
 ol, ul{
     list-style-type: none;
 }
+
+.encabezado{
+    background-color: $oscuro;
+    text-align: center;
+    color: $claro;
+    margin-bottom: 0;
+}

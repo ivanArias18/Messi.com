@@ -32,6 +32,13 @@ ol, ul {
   list-style-type: none;
 }
 
+.encabezado {
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
 .nob-fondo {
   background-color: #008000;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.733) 50%, rgb(0, 0, 0) 50%);
@@ -138,6 +145,9 @@ body {
 }
 .hero .dir-rev {
   flex-direction: row-reverse;
+  display: flex;
+  padding: 1rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -147,7 +157,9 @@ body {
     text-align: center;
   }
   .dir-rev {
-    flex-direction: column;
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
   }
 }
 figure > img {
@@ -333,7 +345,7 @@ figure > img {
 
 .messi {
   grid-area: messi;
-  background-image: url(../img/logo_claro.png);
+  background-image: url(../img/logoclaro.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -556,8 +568,6 @@ figure > img {
 
 .main-content {
   flex: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
-  max-width: 100%;
-  width: 100vh;
 }
 
 .footer {
