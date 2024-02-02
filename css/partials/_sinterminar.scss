@@ -2,13 +2,17 @@
     background-image: url(../img/errorH.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     background-size: 100% 100%;
     background-position: center;
     text-align: center;
-    max-width: 100%;
 }
 
 .main-content {
-    flex: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
+    flex: 1;
+}
+
+.sinhacer.sinhacer{
+max-width: 100%;
 }
